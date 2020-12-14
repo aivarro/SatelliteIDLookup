@@ -1,0 +1,1 @@
+insert into satellite(internationalDesignator, name, yearOfLaunch, orbitType) values('x123', 'TestCube', 2020, 'GEO');
