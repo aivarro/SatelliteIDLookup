@@ -1,5 +1,6 @@
 package eu.spaceit.satelliteidlookup.satellite;
 
+import eu.spaceit.satelliteidlookup.misson.Mission;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 
 import javax.persistence.*;
@@ -20,5 +21,8 @@ public class Satellite extends PanacheEntityBase {
     @NotNull(message = "orbitType cannot be null")
     @Enumerated(EnumType.STRING)
     public OrbitType orbitType;
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "mission_name", nullable = false)
+    public Mission mission;
 
 }

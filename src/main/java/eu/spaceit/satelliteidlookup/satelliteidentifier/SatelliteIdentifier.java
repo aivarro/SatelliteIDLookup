@@ -1,4 +1,4 @@
-package eu.spaceit.satelliteidlookup;
+package eu.spaceit.satelliteidlookup.satelliteidentifier;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
